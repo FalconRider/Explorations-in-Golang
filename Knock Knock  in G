@@ -1,0 +1,80 @@
+package main
+import "fmt"
+
+//pragma solidity ^0.4.18;
+/*  Knock Knock           ver201803170400a
+          Anyone remember knock knock jokes?
+
+    wtf=======================================================wtf
+        - my Solidiy demonstration of basic IN OUT interaction, 
+    converted to Golang -leaving in all the Solidity bits, 
+    just commenting them out. and adding some additional play by play
+    Makes a very visible demo of why even experience programers are confused
+   wtf=====================================================wtf
+            
+          
+          Purpose : to show what exactly 
+          contract input entries look like in the contract	
+          
+          Enter an AMOUNT   in the Value. 
+          Play with wei or gwei or finny oe Ether selctor
+          Note the test Account your using - switch around
+*/
+
+// Just a little Solidity coding practice
+
+//contract KnockKnock {   // no contracts
+//------------------------------------------
+func main() { 
+    
+    //string last;        ---- no ; needed
+   // address yourname;   --------------no addresse type 
+   // uint howMuch;     -----reverse  type name  to name type
+    
+    //last := "To Who You Too!!!!!!"
+    //guess string
+    
+    var fname string
+    
+    
+    
+   
+// Constructor function/ same name as contract, -    no constructor
+  
+  // function KnockKnock() public payable {      --     no payable
+  // yourname = msg.sender; -----------------no  msg.sender
+  // howMuch = msg.value;------------------or msg value
+  // last = " To Who You Too!!!!!!";
+//}
+
+
+// Go ahead function
+ //  function KNOCK_KNOCK() public view returns (address Whos_there) {
+ //  return yourname;
+// }
+    
+    fmt.Println("I say KNOCK KNOCK\n")
+    fmt.Println("-and you say - whos there?\n")
+    
+    fmt.Scanln(&fname)
+    fmt.Scanln(&fname)
+// Second time  function
+    fmt.Println( "I say Bob, you say Bob Who?\n")
+    
+    var lname string 
+    
+    fmt.Scanln(&lname)
+    
+    fmt.Println( "I say Bob or sink, the water's fine\n")
+    fmt.Println( "rrrrrrimmmshot\n")
+  // function How_Much() public view returns(uint){
+ //  return howMuch;
+ //  }
+  
+// Third time  function
+  // function TO_WHO() public view returns(string){
+  // return last;
+//}
+  
+ //  problem if you enter 2 words  in the first inquiry it skips the second //question. So I put a secong dummy input to capture -there-
+}
