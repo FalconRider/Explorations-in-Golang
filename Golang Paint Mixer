@@ -1,0 +1,86 @@
+package main
+
+import "fmt"
+
+//     GOLANG  PAINT MIXER
+
+/*Just a little coding practice and headache exploration.
+Enter  2 of  "red"   or "blue"  or   "yellow". Any order.
+Get orange green or purple, or original colours if you double, 
+or try again, if you messed up.
+*/
+
+
+
+var c1 int
+var c2 int
+var c3 int
+
+func main() {
+
+	// input 2 strings
+
+	fmt.Print("Enter First String: ")
+	var first string
+	fmt.Scanln(&first)
+	
+	fmt.Print("Enter Second String: ")
+	var second string
+	fmt.Scanln(&second)
+    
+    
+	if first == "red" {
+		c1 = 1
+	}
+	if first == "blue" {
+		c1 = 2
+	}
+	if first == "yellow" {
+		c1 = 3
+	}
+	if second == "red" {
+		c2 = 10
+	}
+	if second == "blue" {
+		c2 = 20
+	}
+	if second == "yellow" {
+		c2 = 30
+	}
+
+    c3 = (c1 + c2)
+    //----------------------------------------------
+    fmt.Print(first + "  and  " + second)
+    fmt.Print(" mix to ")
+    
+    //----------------------------------------------
+    if c3 ==   11 {
+	fmt.Println(" red ")
+    }
+    if c3 ==   21 {
+	fmt.Println(" purple ")
+    }
+    if c3 ==   31 {
+	fmt.Println(" orange ")
+    }
+    if c3 ==   12 {
+	fmt.Println(" purple ")
+    }
+    if c3 ==   22 {
+	fmt.Println(" blue ")
+    }
+    if c3 ==   32 {
+	fmt.Println(" green ")
+    }
+    if c3 ==   13 {
+	fmt.Println(" orange ")
+    }
+    if c3 ==   23 {
+	fmt.Println(" green ")
+    }
+    if c3 ==   33 {
+	fmt.Println(" yellow ")
+    }
+    fmt.Println(" Try again ")
+    
+}
